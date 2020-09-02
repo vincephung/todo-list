@@ -9,3 +9,6 @@ Uses localStorage to store data,
 Used webpack and npm
 
 Mostly focused on the concepts of factory functions and OOP principles
+
+
+https://vincephung.github.io/todo-list/
