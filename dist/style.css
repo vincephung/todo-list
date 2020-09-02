@@ -1,0 +1,134 @@
+/*flex-container that holds project and task section */
+#container{
+  display:flex;
+  height: 100%; 
+  background-color: whitesmoke;
+}
+
+header{
+  display:flex;
+  justify-content: space-between;
+}
+
+header button{
+  align-self: center;
+  margin-right: 20px;
+  height: 50%;
+  background-color: #0d122bd1;
+  color:white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  padding: 10px;
+}
+
+ /* adding tasks to task secrion */
+ .task-section{
+  margin-left: 5px;
+  flex:20;
+  display:flex;
+  flex-direction:column;
+  height: 100%;
+}
+
+.task-section .taskDiv{
+  margin-top: 20px;
+
+}
+
+
+.project-section{
+  flex:20;
+  display:flex;
+  flex-direction:column;
+  height: 100%;
+  
+}
+
+
+/* project section */ 
+.project-section .projectDiv{
+  margin-top: 20px;
+  padding: 20px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.project-section .projectDiv:hover{
+  background-color: #98a7f2
+}
+
+.selected{
+  background-color: #5DBDEA;
+}
+.not-selected{
+  border:none;
+}
+
+/* divides the two sections */
+.divider{
+  height: 100%;
+  flex:1;
+  background-color:#E0E0E0
+}
+
+
+/*modal for todo task items */
+/* The Modal (background) */
+.taskModal , .projectModal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modalContent {
+    background-color: #fefefe;
+    height: 400px;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+
+  }
+
+    /* Modal Content/Box */
+    .projectModalContent {
+      background-color: #fefefe;
+      height: 200px;
+      margin: 15% auto; /* 15% from the top and centered */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 50%; /* Could be more or less, depending on screen size */
+      display:flex;
+      flex-direction: column;
+    }
+    
+    .projectModalContent button{
+      margin-top: 20px;
+    }
+
+  /* Task modal form */
+  .taskForm{
+      display:flex;
+      flex-direction:column;
+      justify-content: space-between;
+      width: 100%;
+      height: 70%;
+  }
+
+   .closeOptions{
+      margin: 0 auto;
+  }
+
+
+
+
+ 
